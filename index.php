@@ -6,7 +6,7 @@
 
 // TODO Votre code ici.
 $aleas = rand(0, 50);
-echo $aleas;
+echo "<div>$aleas</div>";
 echo "<br>";
 /**
  * 2. Générez un nombre aléatoire compris entre 50 et getrandmax, affichez le résultat dans un nouveau <p>
@@ -14,7 +14,7 @@ echo "<br>";
 
 // TODO Votre code ici.
 $aleas = rand(50, getrandmax());
-echo $aleas;
+echo "<p>$aleas</p>";
 echo "<br>";
 /**
  * 3. Générez un nombre aléatoire compris entre 0 et 50
@@ -25,10 +25,10 @@ echo "<br>";
 // TODO Votre code ici.
 $aleas = rand(0, 50);
 if($aleas <= 25){
-    echo "vous avez gagné";
+    echo "<p>vous avez gagné</p>";
 }
 else {
-    echo "vous avez perdu";
+    echo "<p>vous avez perdu</p>";
 }
 echo "<br>";
 /**
