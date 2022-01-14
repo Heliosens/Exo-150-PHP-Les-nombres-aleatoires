@@ -39,9 +39,9 @@ echo "<br>";
 
 // TODO Votre code ici.
 function createAlea ($max, $min){
-    $result = rand($max, $min);
+    $result = rand($min, $max);
 
-    if($result > ($max - 100)){
+    if($result > $max - 100){
         createAlea($max, $min);
     }
     else {
